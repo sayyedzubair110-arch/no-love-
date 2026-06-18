@@ -1,0 +1,483 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali Shah Food Corner - Fast Food Restaurant in North Nazimabad, Karachi. Fresh Taste, Fast Service, Great Quality!">
+    <meta name="keywords" content="Fast Food, Burgers, Pizza, Shawarma, North Nazimabad, Karachi, Pakistan">
+    <meta name="author" content="Ali Shah Food Corner">
+    <meta property="og:title" content="Ali Shah Food Corner - Fast Food in North Nazimabad, Karachi">
+    <meta property="og:description" content="Fresh Taste, Fast Service, Great Quality! Order delicious fast food online.">
+    <meta property="og:type" content="business.business">
+    <title>Ali Shah Food Corner - Fresh Taste, Fast Service | Best Fast Food in Karachi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Ali Shah Food Corner</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fresh Taste, Fast Service, Great Quality!</h1>
+            <p>Your favorite fast food destination in North Nazimabad, Karachi</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-burger.jpg" alt="Delicious Burger">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Ali Shah Food Corner</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Ali Shah Food Corner, your premier destination for quality fast food in North Nazimabad, Karachi. We pride ourselves on serving delicious, freshly prepared meals with the finest ingredients and unmatched customer service.</p>
+                    <h3>Why Choose Us?</h3>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Fresh Ingredients Daily</li>
+                        <li><i class="fas fa-check-circle"></i> Fast & Friendly Service</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable Pricing</li>
+                        <li><i class="fas fa-check-circle"></i> Hygienic Preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Quick Delivery Options</li>
+                        <li><i class="fas fa-check-circle"></i> Wide Variety of Menu Items</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/restaurant.jpg" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Delicious Menu</h2>
+            
+            <div class="menu-category">
+                <h3>🍔 Burgers</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/burger1.jpg" alt="Classic Burger">
+                        <h4>Classic Burger</h4>
+                        <p>Juicy beef patty with lettuce, tomato, and special sauce</p>
+                        <span class="price">Rs. 250</span>
+                        <button class="btn-order" onclick="addToOrder('Classic Burger', 250)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/burger2.jpg" alt="Cheese Burger">
+                        <h4>Cheese Burger</h4>
+                        <p>Double cheese with crispy bacon and fresh vegetables</p>
+                        <span class="price">Rs. 320</span>
+                        <button class="btn-order" onclick="addToOrder('Cheese Burger', 320)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/burger3.jpg" alt="Double Patty Burger">
+                        <h4>Double Patty Burger</h4>
+                        <p>Two juicy patties, double cheese, bacon, and onions</p>
+                        <span class="price">Rs. 400</span>
+                        <button class="btn-order" onclick="addToOrder('Double Patty Burger', 400)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🌶️ Zinger Burgers</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/zinger1.jpg" alt="Classic Zinger">
+                        <h4>Classic Zinger</h4>
+                        <p>Crispy fried chicken with lettuce and mayo</p>
+                        <span class="price">Rs. 280</span>
+                        <button class="btn-order" onclick="addToOrder('Classic Zinger', 280)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/zinger2.jpg" alt="Spicy Zinger">
+                        <h4>Spicy Zinger</h4>
+                        <p>Extra hot fried chicken with jalapenos and sriracha</p>
+                        <span class="price">Rs. 320</span>
+                        <button class="btn-order" onclick="addToOrder('Spicy Zinger', 320)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/zinger3.jpg" alt="Zinger Supreme">
+                        <h4>Zinger Supreme</h4>
+                        <p>Premium fried chicken with cheese and bacon</p>
+                        <span class="price">Rs. 380</span>
+                        <button class="btn-order" onclick="addToOrder('Zinger Supreme', 380)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍕 Pizza</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/pizza1.jpg" alt="Cheese Pizza">
+                        <h4>Cheese Pizza (Medium)</h4>
+                        <p>Fresh mozzarella and special pizza sauce</p>
+                        <span class="price">Rs. 350</span>
+                        <button class="btn-order" onclick="addToOrder('Cheese Pizza (M)', 350)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/pizza2.jpg" alt="Pepperoni Pizza">
+                        <h4>Pepperoni Pizza (Medium)</h4>
+                        <p>Loaded with pepperoni and mozzarella</p>
+                        <span class="price">Rs. 450</span>
+                        <button class="btn-order" onclick="addToOrder('Pepperoni Pizza (M)', 450)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/pizza3.jpg" alt="Meat Lovers Pizza">
+                        <h4>Meat Lovers Pizza (Medium)</h4>
+                        <p>Chicken, beef, and bacon with extra cheese</p>
+                        <span class="price">Rs. 550</span>
+                        <button class="btn-order" onclick="addToOrder('Meat Lovers Pizza (M)', 550)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🌮 Shawarma</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/shawarma1.jpg" alt="Chicken Shawarma">
+                        <h4>Chicken Shawarma</h4>
+                        <p>Tender chicken with tahini sauce and fresh veggies</p>
+                        <span class="price">Rs. 280</span>
+                        <button class="btn-order" onclick="addToOrder('Chicken Shawarma', 280)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/shawarma2.jpg" alt="Beef Shawarma">
+                        <h4>Beef Shawarma</h4>
+                        <p>Premium beef shawarma with garlic sauce</p>
+                        <span class="price">Rs. 350</span>
+                        <button class="btn-order" onclick="addToOrder('Beef Shawarma', 350)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/shawarma3.jpg" alt="Mixed Shawarma">
+                        <h4>Mixed Shawarma</h4>
+                        <p>Chicken and beef combination with special sauce</p>
+                        <span class="price">Rs. 400</span>
+                        <button class="btn-order" onclick="addToOrder('Mixed Shawarma', 400)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍟 Fries & Sides</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/fries1.jpg" alt="Regular Fries">
+                        <h4>Regular Fries</h4>
+                        <p>Crispy golden fries with sea salt</p>
+                        <span class="price">Rs. 120</span>
+                        <button class="btn-order" onclick="addToOrder('Regular Fries', 120)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/fries2.jpg" alt="Cheese Fries">
+                        <h4>Cheese Fries</h4>
+                        <p>Fries loaded with melted cheese and bacon bits</p>
+                        <span class="price">Rs. 180</span>
+                        <button class="btn-order" onclick="addToOrder('Cheese Fries', 180)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/fries3.jpg" alt="Loaded Fries">
+                        <h4>Loaded Fries</h4>
+                        <p>Fries with cheese, chicken, and special sauce</p>
+                        <span class="price">Rs. 250</span>
+                        <button class="btn-order" onclick="addToOrder('Loaded Fries', 250)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🥙 Sandwiches & Rolls</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/sandwich1.jpg" alt="Chicken Sandwich">
+                        <h4>Chicken Sandwich</h4>
+                        <p>Grilled chicken breast with veggies and sauce</p>
+                        <span class="price">Rs. 220</span>
+                        <button class="btn-order" onclick="addToOrder('Chicken Sandwich', 220)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/sandwich2.jpg" alt="Beef Roll">
+                        <h4>Beef Roll</h4>
+                        <p>Grilled beef in soft roti with fresh ingredients</p>
+                        <span class="price">Rs. 280</span>
+                        <button class="btn-order" onclick="addToOrder('Beef Roll', 280)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/sandwich3.jpg" alt="Veggie Wrap">
+                        <h4>Veggie Wrap</h4>
+                        <p>Fresh vegetables with hummus and tahini sauce</p>
+                        <span class="price">Rs. 180</span>
+                        <button class="btn-order" onclick="addToOrder('Veggie Wrap', 180)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🔥 BBQ Items</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/bbq1.jpg" alt="BBQ Chicken">
+                        <h4>BBQ Chicken</h4>
+                        <p>Grilled chicken with smoky BBQ sauce</p>
+                        <span class="price">Rs. 400</span>
+                        <button class="btn-order" onclick="addToOrder('BBQ Chicken', 400)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/bbq2.jpg" alt="BBQ Beef">
+                        <h4>BBQ Beef</h4>
+                        <p>Tender beef with special BBQ marinade</p>
+                        <span class="price">Rs. 500</span>
+                        <button class="btn-order" onclick="addToOrder('BBQ Beef', 500)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/bbq3.jpg" alt="BBQ Platter">
+                        <h4>BBQ Platter</h4>
+                        <p>Combination of chicken, beef, and grilled vegetables</p>
+                        <span class="price">Rs. 650</span>
+                        <button class="btn-order" onclick="addToOrder('BBQ Platter', 650)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🥤 Cold Drinks</h3>
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <img src="images/drink1.jpg" alt="Soft Drinks">
+                        <h4>Soft Drinks (250ml)</h4>
+                        <p>Coca-Cola, Sprite, 7-Up</p>
+                        <span class="price">Rs. 70</span>
+                        <button class="btn-order" onclick="addToOrder('Soft Drink (250ml)', 70)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/drink2.jpg" alt="Fresh Juice">
+                        <h4>Fresh Juice</h4>
+                        <p>Orange, Mango, or Watermelon juice</p>
+                        <span class="price">Rs. 120</span>
+                        <button class="btn-order" onclick="addToOrder('Fresh Juice', 120)">Order Now</button>
+                    </div>
+                    <div class="menu-card">
+                        <img src="images/drink3.jpg" alt="Milkshake">
+                        <h4>Milkshake</h4>
+                        <p>Vanilla, Chocolate, or Strawberry</p>
+                        <span class="price">Rs. 150</span>
+                        <button class="btn-order" onclick="addToOrder('Milkshake', 150)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Food Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Food Gallery 1">
+                    <div class="gallery-overlay">
+                        <p>Delicious Burgers</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Food Gallery 2">
+                    <div class="gallery-overlay">
+                        <p>Fresh Pizza</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Food Gallery 3">
+                    <div class="gallery-overlay">
+                        <p>Tasty Shawarma</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Food Gallery 4">
+                    <div class="gallery-overlay">
+                        <p>Crispy Fries</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="Food Gallery 5">
+                    <div class="gallery-overlay">
+                        <p>Grilled BBQ</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="Food Gallery 6">
+                    <div class="gallery-overlay">
+                        <p>Refreshing Drinks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best fast food in North Nazimabad! Fresh ingredients and fast service. Highly recommended!"</p>
+                    <h4>- Muhammad Ali</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ali Shah Food Corner has the best burgers and shawarma. Quality never compromises!"</p>
+                    <h4>- Fatima Khan</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing food, friendly staff, and reasonable prices. Worth every penny!"</p>
+                    <h4>- Ahmed Hassan</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Quick delivery and always hot, fresh food. My go-to place for quick meals!"</p>
+                    <h4>- Sarah Malik</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Ali Shah Food Corner</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> North Nazimabad, Karachi, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:03043041472">0304-3041472</a></p>
+                    <p><i class="fas fa-clock"></i> Open Daily: 10:00 AM - 11:00 PM</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3049127869844!2d67.0844!3d24.9342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb34022a0b7d4e3%3A0x1234567890abcdef!2sNorth%20Nazimabad%2C%20Karachi!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:03043041472">0304-3041472</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp Order</h4>
+                        <p><a href="https://wa.me/923043041472" target="_blank">Chat on WhatsApp</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>North Nazimabad, Karachi</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <h4>Hours</h4>
+                        <p>10:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Ali Shah Food Corner is your trusted fast-food restaurant serving quality meals in North Nazimabad, Karachi.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:03043041472">0304-3041472</a></p>
+                    <p>Location: North Nazimabad, Karachi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ali Shah Food Corner. All rights reserved. | Fast Food in North Nazimabad, Karachi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
